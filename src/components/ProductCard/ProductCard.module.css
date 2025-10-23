@@ -1,0 +1,44 @@
+.productCard {
+  transition: all 0.2s ease;
+  cursor: pointer;
+  height: 100%;
+}
+
+.productCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(84, 180, 106, 0.15);
+}
+
+.addToCartBtn {
+  background-color: #e7faeb;
+  color: #3b944e;
+}
+
+.imageContainer {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  overflow: hidden;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s ease;
+}
+
+.productCard:hover .productImage {
+  transform: scale(1.05);
+}
+
+.addToCartBtn {
+  transition: all 0.2s ease;
+}
+
+.addToCartBtn:hover {
+  background-color: #D6F0DC !important;
+  transform: translateY(-1px);
+}
