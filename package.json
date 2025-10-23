@@ -5,12 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "build:gh-pages": "tsc && vite build --base=./",
+    "build": "vite build",
+    "build:gh-pages": "VITE_BASE_PATH=/2.3.2_AntonKarpov/ vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "typecheck": "tsc" 
   },
   "dependencies": {
     "@mantine/core": "^7.17.8",
